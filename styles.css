@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+
+}
+body{
+    background-image: linear-gradient(to right,rgb(253, 253, 215),pink,rgb(213, 247, 213));
+    color:rgb(3, 39, 39)
+}
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+header{
+    padding: 10px 10%;
+    justify-content: space-between;
+}
+
+nav ul li a{
+    color:blue;
+    text-decoration: none;
+    font-size: 18px;
+    position:relative;
+
+}
+nav ul li a::after{
+    content: '';
+    width:0;
+    height: 3px;
+    background: red;
+    position: fixed;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width:100%
+}
+.row-home{
+    padding: 25px 15%;
+    display:flex;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+.col-home-1{
+    flex-basis:35%;
+    margin-top: 8%;
+    font-size: 30px;
+}
+.col-home-1 h1{
+    font-size: 60px;
+    margin-top:20px;
+}
+.col-home-2 img{
+    width:80%
+}
+.webfooter{
+    width:100%;
+    text-align: center;
+    padding: 25px 0;
+    background:greenyellow;
+    font-weight: 300;
+    margin-top: 20px;
+    color:blue;
+
+}
+.webfooter i{
+    color: red;
+}
+/* styling Know more button */
+.submit_button{
+    display: block;
+    margin: 50px auto;
+    width:fit-content;
+    border:3px solid blue;
+    padding: 10px 20px;
+    margin-left: 5px;
+    margin-top: 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: rgb(37, 35, 33);
+    transition: background 0.5s;
+
+}
+.submit_button:hover{
+    background: brown;
+    color:red;
+}
+#aboutmain{
+    padding: 70px 0 90px 70px;
+    color:blue;
+    margin-bottom: 20px;
+}
+.aboutsection{
+    padding:10px 10%
+}
+.aboutrow{
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+
+}
+.aboutcol1{
+    flex-basis:50%;
+    margin-left: -50px;
+    margin-right: 80px;
+    margin-top: 5%;
+
+}
+.aboutcol1 img{
+    border-radius:15px;
+}
+.aboutcol2{
+    flex-basis:75%;
+
+}
+.about-title{
+    font-size:50px;
+    font-weight: 600;
+    color:blue;
+}
+#portfolio-main{
+    padding: 10px 0;
+
+}
+.portfolio-section{
+    padding:10px 10% ;
+
+}
+.portfolio-title{
+    padding: auto;
+    font-size: 50px;
+    text-align:center;
+    font-weight: 00;
+    color:blue;
+}
+.portfolio-work-list{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap:40px;
+    margin-top:50px;
+    margin-bottom: 90px;
+}
+.portfolio{
+    border-radius:10px;
+    position:relative;
+    overflow:hidden;
+}
+.portfolio img{
+    padding: 40px;
+    width:  50%;
+    border-radius:10px;
+    display:block;
+    transition: transform 0.5s;
+}
+
+    
+
+.layer h3{
+    font-weight: 700;
+    margin-bottom: 20px;
+    color:blueviolet
+}
+.layer p{
+    color:rgb(5, 78, 54);
+}
+
+.contact{
+    background:#f9feff;
+    display: flex;
+    padding-left: 40%;
+  }
+  
+  /* FORM STYLES */
+  .contact form{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:20px;
+  }
+  
+  .contact form label{
+    display:block;
+  }
+  
+  .contact form p{
+    margin:0;
+  }
+  
+  .contact form .full{
+    grid-column: 1/3;
+  }
+  
+  .contact form button, .contact form input, .contact form textarea{
+    width:100%;
+    padding:1em;
+    border:1px solid #c9e6ff;
+  }
+  
+  .contact form button{
+    background:#c9e6ff;
+    border:0;
+    text-transform: uppercase;
+    width: 60%;
+    height: 78%;
+    align-content: center;
+  }
+  
+  .contact form button:hover,.contact form button:focus{
+    background:#92bde7;
+    color:#fff;
+    outline:0;
+    transition: background-color 2s ease-out;
+  }
+  .alert{
+    text-align-last: justify;
+    padding:10px;
+    background:#db42a8;
+    color:#fff;
+    margin-bottom:10px;
+    display:none;
+  }
+  
+  

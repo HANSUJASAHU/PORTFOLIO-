@@ -1,0 +1,15 @@
+
+
+
+
+
+
+
+
+
+
+
+
+var messages ref = firebase.database().ref( 'messages'); 
+//listen for form submit ;
+document.getElementByid('contact form').addEventlistner('submit,submitform');
